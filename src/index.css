@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --color-immersive-bg: #020617;
+  --color-immersive-panel: rgba(30, 41, 59, 0.5);
+  --color-immersive-card: rgba(15, 23, 42, 0.6);
+  --color-cyan-neon: #00f2ff;
+  --color-cyan-glow: rgba(0, 242, 255, 0.15);
+  --animate-spin-slow: spin 12s linear infinite;
+  --font-sans: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Custom UI utility classes */
+.immersive-border-cyan {
+  border-color: rgba(0, 242, 255, 0.2);
+}
+
+.immersive-border-cyan-active {
+  border-color: #00f2ff;
+}
+
+.immersive-text-cyan {
+  color: #00f2ff;
+}
+
+.immersive-bg-cyan-dim {
+  background-color: rgba(0, 242, 255, 0.1);
+}
+
+.immersive-glow-cyan {
+  box-shadow: 0 0 20px rgba(0, 242, 255, 0.15);
+}
+
+/* Finland flag logo */
+.logo-icon-fi {
+  width: 32px;
+  height: 24px;
+  background: #003580;
+  border: 1.5px solid #ffffff;
+  border-radius: 3px;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.logo-icon-fi::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #ffffff;
+  transform: translateY(-50%);
+}
+.logo-icon-fi::before {
+  content: '';
+  position: absolute;
+  left: 35%;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #ffffff;
+}
+
+/* Breathing indicator */
+.breathing-glow {
+  box-shadow: 0 0 8px #00f2ff;
+  animation: breathe 2s infinite ease-in-out;
+}
+
+@keyframes breathe {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(0.95);
+    box-shadow: 0 0 4px #00f2ff;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #00f2ff;
+  }
+}

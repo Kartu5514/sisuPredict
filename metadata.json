@@ -1,0 +1,8 @@
+{
+  "name": "Veikkausliiga Predictor",
+  "description": "Alat analisis dan prediksi taruhan sepak bola khusus Liga Finlandia (Veikkausliiga) menggunakan data statistik historis, performa pemain terkini, dan analisis kecerdasan buatan Gemini.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
